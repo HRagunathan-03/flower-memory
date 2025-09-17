@@ -1,3 +1,33 @@
-body {
-    background: greenyellow;
+
+h1 {
+    font-family: sans-serif;
+    color: blue;
+    text-align: center;
+
+}
+
+p {
+    font-family: Arial, sans-serif;
+    color: purple;
+    text-align: center;
+}
+
+.game-area {
+    height: 500px;
+    width: 700px;
+    margin: auto;
+    border: none;
+    padding: 5%
+
+}
+
+.btn--card {
+    height: 200px;
+    width: 200px;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    
+    
 }
