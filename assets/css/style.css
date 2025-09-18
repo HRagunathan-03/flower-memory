@@ -1,4 +1,8 @@
 
+.body {
+    background-color: beige;
+}
+
 h1 {
     font-family: sans-serif;
     color: blue;
@@ -24,7 +28,6 @@ p {
 .btn--card {
     height: 200px;
     width: 200px;
-    justify-content: center;
     margin-top: 1rem;
     margin-right: 1rem;
     margin-bottom: 1rem;
@@ -34,10 +37,32 @@ p {
 }
 
 .btn--tulip {
+    
+    
+    width: 200px;
+    height: 200px;
+    background-size: cover;
     background-image: url(../images/tulip.jpg)
+    
+    
     
 }
 
-.body {
-    background-color: beige;
+.btn--sunflower {
+    
+    width: 200px;
+    height: 200px;
+    background-size: 100% 100%;
+    background-image: url(../images/sunflower.jpg)
+    
 }
+
+.btn--lotus {
+    
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-image: url(../images/lotus.jpg)
+    
+}
+
