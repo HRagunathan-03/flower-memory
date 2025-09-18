@@ -28,6 +28,16 @@ p {
     margin-top: 1rem;
     margin-right: 1rem;
     margin-bottom: 1rem;
+    background-color: pink;
     
     
+}
+
+.btn--tulip {
+    background-image: url(../images/tulip.jpg)
+    
+}
+
+.body {
+    background-color: beige;
 }
