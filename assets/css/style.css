@@ -1,19 +1,42 @@
-
-.body {
-    background-color: beige;
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-h1 {
-    font-family: sans-serif;
-    color: blue;
-    text-align: center;
-
+body {
+    font-family: 'Calibri', sans-serif;
+    padding: 25px;
+    min-height: 100vh;
+    background: lightsteelblue;
+    color: rgb(49, 41, 143);
 }
 
-p {
-    font-family: Arial, sans-serif;
-    color: purple;
+h1, h2 {
     text-align: center;
+    padding: 10px;
+}
+
+.game-area {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+}
+
+.results {
+    display: flex;
+    flex-wrap: wrap;
+    background: white;
+    width: 80vh;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px;
+    margin: auto;
+    border-radius: 20px;
+    border: 2px solid rgb(49, 41, 143);
+    font-size: 1.3em;
+    font-weight: bold;
 }
 
 
