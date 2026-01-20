@@ -16,53 +16,5 @@ p {
     text-align: center;
 }
 
-.game-area {
-    height: 500px;
-    width: 700px;
-    margin: auto;
-    border: none;
-    padding: 5%
 
-}
-
-.btn--card {
-    height: 200px;
-    width: 200px;
-    margin-top: 1rem;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
-    background-color: pink;
-    
-    
-}
-
-.btn--tulip {
-    
-    
-    width: 200px;
-    height: 200px;
-    background-size: cover;
-    background-image: url(../images/tulip.jpg)
-    
-    
-    
-}
-
-.btn--sunflower {
-    
-    width: 200px;
-    height: 200px;
-    background-size: 100% 100%;
-    background-image: url(../images/sunflower.jpg)
-    
-}
-
-.btn--lotus {
-    
-    width: 200px;
-    height: 200px;
-    background-size: cover;
-    background-image: url(../images/lotus.jpg)
-    
-}
 

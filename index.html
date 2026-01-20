@@ -4,34 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Memory Game: Flowers</title>
+    <title>Flower Memory Game</title>
     
 </head>
 
 <body class="body">
-    <h1>Memory Game: Flowers</h1>
-    <p>Find the matching pair!</p>
+    <h1><i class="fa-solid fa-leaf"></i> Flower Memory Game <i class="fa-brands fa-pagelines"></i></h1>
+    <p>Find all the matching pairs!</p>
 
-    <div class="game-area">
-        
-        <div class="card-area">
-            <button id="button-one" class="btn--card"></button>
-            <button id="button-two" class="btn--card"></button>
-            <button id="button-three" class="btn--card"></button>
-            
-        </div>
-        <div class="card-area">
-            <button id="button-four" class="btn--card"></button>
-            <button id="button-five" class="btn--card"></button>
-            <button id="button-six" class="btn--card"></button>
-        </div>
-
-    </div>
+    <div class="game-area" id="gameArea"></div>
 
     
+    <div class="results">
+        <div class="moves">Moves:</div>
+        <div class="moves-value">0</div>
 
+        <div class="matches">Matches:</div>
+        <div class="matches-value">0 / 6</div>
+    </div>
+
+    <div class="new-game">
+        <button class="button" onclick="newGame()">New Game</button>
+    </div>
+
+    <div class="win" id="win">
+        <h2>Congratulations! You have found all of the matches!</h2>
+        <h3 id="finalMoves">Moves:</h3>
+        <button class="button" onclick="newGame()">Play Again!</button>
+    </div>
 
     <script src="assets/js/script.js"></script>
+
+    <!-- Font Awesome Kit -->
+    <script src="https://kit.fontawesome.com/e533e26478.js" crossorigin="anonymous"></script>
     
 </body>
 </html>

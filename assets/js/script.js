@@ -1,3 +1,5 @@
+
+
 //Applies event listener to each game card.
 
 let buttonOne = document.getElementById("button-one");
@@ -33,3 +35,7 @@ function displaySunflowerCard(e) {
 function displayLotusCard(e) {
     e.currentTarget.classList.toggle("btn--lotus");
 }
+
+
+
+
