@@ -21,7 +21,63 @@ h1, h2 {
 .game-area {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
     
+}
+
+.playing-cards {
+    aspect-ratio: 1;
+    cursor: pointer;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.7s;
+}
+
+.playing-cards:hover {
+    transform: scale(1.1);
+
+}
+
+.playing-cards.flipped {
+    transform: rotateY(180deg);
+}
+
+.playing-cards.flipped:hover {
+    transform: rotateY(180deg) scale(1.1);
+    
+}
+
+.face-down, .face-up {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+
+.face-down {
+    background: white;
+    font-size: 4em;
+    color: rgb(143, 13, 132);
+    border: 3px solid white;
+    box-shadow: 5px 5px 5px rgb(49, 41, 143);
+}
+
+.face-up {
+    background: white;
+    transform: rotateY(180deg);
+    border: 3px solid white;
+    box-shadow: 5px 5px 5px rgb(49, 41, 143);
+    overflow: hidden;
+}
+
+.face-up img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .results {
