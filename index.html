@@ -1,25 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Flower Memory Game</title>
-    
+
 </head>
 
 <body class="body">
     <h1><i class="fa-brands fa-pagelines"></i> Flower Memory Game <i class="fa-brands fa-pagelines"></i></h1>
     <h2>Find all the matching pairs!</h2>
 
-    <div class="game-area" id="gameArea">
-        <div class="playing-cards flipped">
-            <div class="face-down"><i class="fa-brands fa-pagelines"></i></div>
-            <div class="face-up"><img src="assets/images/lotus.jpg" alt=""></div>
-        </div>
-    </div>
+    <div class="game-area" id="gameArea"></div>
 
-    
+
     <div class="results">
         <div class="moves">Moves:</div>
         <div class="moves-value">0</div>
@@ -32,16 +28,20 @@
         <button class="button" onclick="newGame()">New Game</button>
     </div>
 
-    <div class="win" id="win">
-        <h3>Congratulations. You have found all of the matches!</h3>
+    <div class="win show" id="win">
+
+        <h3>Congratulations! You have found all of the matches!</h3>
         <h4 id="finalMoves">Moves:</h4>
+        
         <button class="button" onclick="newGame()">Play Again!</button>
+
     </div>
 
     <script src="assets/js/script.js"></script>
 
     <!-- Font Awesome Kit -->
     <script src="https://kit.fontawesome.com/e533e26478.js" crossorigin="anonymous"></script>
-    
+
 </body>
+
 </html>
