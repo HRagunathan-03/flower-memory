@@ -10,3 +10,4 @@
 - W3 Schools
 - Codynn YouTube
 - stackoverflow
+- images from istockphoto.com
