@@ -33,7 +33,7 @@ h4 {
     
 }
 
-.playing-cards {
+.cards {
     aspect-ratio: 1;
     cursor: pointer;
     position: relative;
@@ -41,21 +41,21 @@ h4 {
     transition: transform 0.7s;
 }
 
-.playing-cards:hover {
+.cards:hover {
     transform: scale(1.1);
 
 }
 
-.playing-cards.flipped {
+.cards.flipped {
     transform: rotateY(180deg);
 }
 
-.playing-cards.flipped:hover {
+.cards.flipped:hover {
     transform: rotateY(180deg) scale(1.1);
     
 }
 
-.playing-cards.matched {
+.cards.matched {
     pointer-events: none;
 }
 

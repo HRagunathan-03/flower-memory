@@ -1,11 +1,11 @@
 
 var images = [
-    "https://unsplash.com/photos/a-large-yellow-sunflower-on-a-yellow-background-Zrb2omy9a18",
-    "https://unsplash.com/photos/shallow-focus-photography-of-white-and-pink-petaled-flowers-fY1ECB1RCd0",
-    "https://unsplash.com/photos/pink-lotus-flower-in-bloom-B1cJcYPoFxY",
-    "https://unsplash.com/photos/blue-flowers-coIBOiWBPjk",
-    "https://unsplash.com/photos/pink-roses-in-close-up-photography-ktzSt2uT1po",
-    "https://unsplash.com/photos/yellow-daffodils-in-bloom-during-daytime--bmC0bWpqHk",
+    "assets/images/blossom.jpg",
+    "assets/images/daffodil.jpg",
+    "assets/images/pansy.jpg",
+    "assets/images/rose.jpg",
+    "assets/images/sunflower.jpg",
+    "assets/images/tulip.jpg",
 ];
 
 var cardOne = null;
@@ -26,15 +26,13 @@ function beginGame() {
     });
 
     for (var i = 0; i < cardDeck.length; i++) {
-        var playingCard = document.createElement("div");
-        playingCard.className = "playingCard";
-        playingCard.innerHTML = `
-        <div class="face-down"><i class="fa-brands fa-pagelines"></i></div>
-            <div class="face-up"><img src="${cardDeck[i]}" alt=""></div>
-        `
-        playingCard.onclick = turnCard;
-        playingCard.dataset.image = cardDeck[i];
-        gameArea.appendChild(playingCard);
+        var cards = document.createElement("div");
+        cards.className = "cards";
+        cards.innerHTML = `<div class="face-down"><i class="fa-brands fa-pagelines"></i></div><div class="face-up"><img src="${cardDeck[i]}" alt=""></div>`
+
+        cards.onclick = turnCard;
+        cards.dataset.image = cardDeck[i];
+        gameArea.appendChild(cards);
     }
 
     /* Resets the variables. */
@@ -86,7 +84,7 @@ function matched() {
             scoreCard();
             reset();
 
-            if (matches == 8) {
+            if (matches == 6) {
                 endGame();
             }
         }, 500);
@@ -100,6 +98,8 @@ function matched() {
     }
 }
 
+beginGame();
+
 function reset() {
     cardOne = null;
     cardTwo = null;
@@ -107,7 +107,7 @@ function reset() {
 }
 
 function endGame() {
-    
+
 
 }
 
