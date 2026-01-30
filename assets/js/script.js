@@ -90,14 +90,25 @@ function matched() {
                 endGame();
             }
         }, 500);
+    } else {
+        setTimeout(() => {
+            cardOne.classList.remove("flipped");
+            cardTwo.classList.remove("flipped");
+            reset();
 
-        
+        }, 1000)
     }
 }
 
+function reset() {
+    cardOne = null;
+    cardTwo = null;
+    canTurn = true;
+}
 
 function endGame() {
     
+
 }
 
 
