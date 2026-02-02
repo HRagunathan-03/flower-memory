@@ -71,7 +71,7 @@ function turnCard() {
 
 function scoreCard() {
     document.getElementById("moves").textContent = moves;
-    document.getElementById("matches").textContent = matches + "/ 6";
+    document.getElementById("matches").textContent = matches + "  / 6";
 
 }
 
