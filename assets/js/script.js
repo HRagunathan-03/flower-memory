@@ -25,6 +25,7 @@ function beginGame() {
         return Math.random() - 0.5;
     });
 
+    /* Creates a div for the shuffled cards. */
     for (var i = 0; i < cardDeck.length; i++) {
         var cards = document.createElement("div");
         cards.className = "cards";
@@ -69,6 +70,8 @@ function turnCard() {
 
 
 function scoreCard() {
+    document.getElementById("moves").textContent = moves;
+    document.getElementById("matches").textContent = matches + "/ 6";
 
 }
 
@@ -98,7 +101,7 @@ function matched() {
     }
 }
 
-beginGame();
+
 
 function reset() {
     cardOne = null;
@@ -107,11 +110,17 @@ function reset() {
 }
 
 function endGame() {
-
+    document.getElementById("finalMoves").textContent = "Moves:  " + moves;
+    document.getElementById("win").classList.add("show");
 
 }
 
+function newGame() {
+    document.getElementById("win").classList.remove("show");
+    beginGame();
+}
 
+beginGame();
 
 
 
