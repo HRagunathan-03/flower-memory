@@ -1,4 +1,4 @@
-
+//Declare variables.
 var images = [
     "assets/images/blossom.jpg",
     "assets/images/daffodil.jpg",
@@ -15,17 +15,20 @@ var matches = 0;
 var moves = 0;
 
 function beginGame() {
+    /**
+     * This function starts the game. It creates a deck of cards, shuffles the cards and inserts them into the "gameArea" div.
+     */
     gameArea = document.getElementById("gameArea");
     gameArea.innerHTML = "";
 
     var cardDeck = images.concat(images);
 
-    /* Shuffles the cards. */
+    //Shuffles the cards.
     cardDeck.sort(function() {
         return Math.random() - 0.5;
     });
 
-    /* Creates a div for the shuffled cards. */
+    // Creates a div for the shuffled cards.
     for (var i = 0; i < cardDeck.length; i++) {
         var cards = document.createElement("div");
         cards.className = "cards";
@@ -36,7 +39,7 @@ function beginGame() {
         gameArea.appendChild(cards);
     }
 
-    /* Resets the variables. */
+    //Resets the variables.
     cardOne = null;
     cardTwo = null;
     canTurn = true;
@@ -49,6 +52,9 @@ function beginGame() {
 
 
 function turnCard() {
+    /**
+     * This function checks if the card can be turned, and turns it as required.
+     */
     if (!canTurn) return;
     if (this.classList.contains("flipped")) return;
     if (this.classList.contains("matched")) return;
@@ -70,6 +76,9 @@ function turnCard() {
 
 
 function scoreCard() {
+    /**
+     * This function updates the number of moves and the number of matches when called.
+     */
     document.getElementById("moves").textContent = moves;
     document.getElementById("matches").textContent = matches + "  / 6";
 
@@ -77,6 +86,9 @@ function scoreCard() {
 
 
 function matched() {
+    /**
+     * This function checks if the cards match.
+     */
     var pair = cardOne.dataset.image == cardTwo.dataset.image;
 
     if (pair) {
@@ -104,18 +116,27 @@ function matched() {
 
 
 function reset() {
+    /**
+     * This function resets the cards.
+     */
     cardOne = null;
     cardTwo = null;
     canTurn = true;
 }
 
 function endGame() {
+    /**
+     * This function displays the "win" div at the end of the game.
+     */
     document.getElementById("finalMoves").textContent = "Moves:  " + moves;
     document.getElementById("win").classList.add("show");
 
 }
 
 function newGame() {
+    /**
+     * This function removes the "win" div and restarts the game.
+     */
     document.getElementById("win").classList.remove("show");
     beginGame();
 }
