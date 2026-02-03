@@ -55,6 +55,14 @@ The main goal of this game is to be engaging and user friendly. It should also b
 
 *Added max-width property to the relevant media queries to center the div.*
 
+### Automated Testing
+
+HTML Checker
+![html-validation](assets/images/html-validation.png)
+
+CSS Checker
+![css-validation](assets/images/css-validation.png)
+
 
 ## Attributions
 - <a href="https://www.w3schools.com/">W3 Schools</a> - This website was extremely helpful with my understanding of many CSS and Javascript terms.
@@ -76,7 +84,11 @@ The main goal of this game is to be engaging and user friendly. It should also b
 
 ## Wireframes
 
+![desktop](assets/images/desktop.png)
 
+![tablet](assets/images/tablet.png)
+
+![phone](assets/images/phone.png)
 
 ## Project Deployment   
 

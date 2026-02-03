@@ -160,6 +160,7 @@ h4 {
     box-shadow: 5px 5px 5px rgb(49, 41, 143);
 }
 
+/* Media queries for screens of different sizes. */
 @media (max-width: 768px) {
     .game-area {
         grid-template-columns: repeat(3, 1fr);
